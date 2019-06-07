@@ -1,8 +1,34 @@
 // Home Content
+.top-head{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: @nav-bg;
+  justify-content: center;
+  h1{
+    width: 100%;
+    text-align: center;
+    .margin-top();
+  }
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .margin-top();
+    .margin-bottom();
+  }
+}
+
 
 .home {
 
   .intro {
+
+    img{
+      @media @phone{
+        max-width: 100%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,6 +44,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    .blast{
+      display: flex;
+      width: 100%;
+    }
+    .sky{
+      display: none;
+    }
+    .launch{
+      display: none;
+    }
 
     img {
       width: 28%;
@@ -46,8 +83,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-flow: row-reverse wrap-reverse;
+      justify-content: flex-start;
+      padding-bottom: 1%;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%;
+        margin-top: 5%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +105,30 @@
       }
 
       .btn {
+        p {
+          @media @phone{
+            width: 100%;
+            padding: 5%;
+          }
+          text-align: center;
+          .button(40%, @porcelain, @btn-bg-color, 4px, 1.5%,2rem)
+
+        }
+        p:hover{
+          background-color: @waterloo;
+          color:@ebony-clay;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;

@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website and a fully responsive website is different in that a fully responsive website implements traits of an adaptive website and fluid websites. Not only are there breakpoints like in and adaptive websites, there are also fluid elements that adjust with the size of the browser until a certain point. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Being mobile first means that the developer starts developing from a mobile size display and work their way up. This means that usually the min-width is used. For the desktop display, the work flow is the opposite way and max-width is usually used. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Font size 62.5% is roughly 10 pixels which is a good root number to start with when talking in terms of rem. Since it is a base 10, things like 17 pixel can be easily expressed with 2.7rem. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way for a programmer to efficiently organize and write css code. Preprocessing code isn’t read by the browser to be displayed but needs to be compiled to the css file via a compiling system. Preprocessors such as sass or less is essentially css enhanced by having features such as nesting and variables which makes writing the code less redundant therefore quicker to write. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept of preprocessing is the nesting feature because it saves writing long class names. My least favorite feature has to be the media query because it does get repetitive writing them over and over again. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
